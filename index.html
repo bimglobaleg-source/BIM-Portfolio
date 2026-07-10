@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIM GLOBAL — Engineering Intelligence for BIM, GIS &amp; Digital Twin</title>
+<meta name="description" content="BIM GLOBAL delivers BIM, GIS, Digital Twin, Big Data and Facility Management services for owners and industrial operators — one engineering intelligence layer across the asset lifecycle.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#081A33">
+<!-- TODO: add <link rel="canonical"> and og:url once the production domain is live -->
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIM GLOBAL">
+<meta property="og:title" content="BIM GLOBAL — Engineering Intelligence">
+<meta property="og:description" content="BIM, GIS, Digital Twin, Big Data and Facility Management services for owners and industrial operators.">
+<meta property="og:image" content="assets/img/logo-full-lg.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BIM GLOBAL — Engineering Intelligence">
+<meta name="twitter:description" content="BIM, GIS, Digital Twin, Big Data and Facility Management services for owners and industrial operators.">
+<meta name="twitter:image" content="assets/img/logo-full-lg.webp">
+
+<!-- Organization structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BIM GLOBAL",
+  "alternateName": "BG — Engineering Intelligence",
+  "description": "BIM GLOBAL delivers BIM, GIS, Digital Twin, Big Data and Facility Management services for owners and industrial operators.",
+  "logo": "assets/img/logo-full-lg.webp",
+  "email": "mailto:bimglobal.eg@gmail.com",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "email": "bimglobal.eg@gmail.com",
+    "contactType": "customer service"
+  }]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preload" as="image" href="assets/img/logo-full-sm.webp">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- If JavaScript is unavailable: hide the loader immediately (it would
+     otherwise stay on screen forever), hide the hamburger button, and make
+     the primary nav — including the Services submenu — statically visible
+     so every link is still reachable. -->
+<noscript>
+<style>
+  #loader{ display:none !important; }
+  .hamburger{ display:none !important; }
+  .mobile-menu{ display:none !important; }
+  .navlinks{ display:flex !important; flex-wrap:wrap; row-gap:10px; position:static; }
+  .dropdown{
+    position:static; opacity:1; visibility:visible; pointer-events:auto;
+    transform:none; box-shadow:none; border:none; margin-top:8px; min-width:0;
+  }
+</style>
+</noscript>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Loading screen -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="assets/img/logo-full-sm.webp" width="360" height="267" alt="">
+</div>
+
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a class="brandmark" href="#home">
+      <img src="assets/img/logo-icon-sm.webp" width="96" height="62" alt="BIM GLOBAL logo">
+      <span class="brand-text"><b>BIM</b> GLOBAL<span class="brand-sub">Engineering Intelligence</span></span>
+    </a>
+
+    <ul class="navlinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="has-dropdown" data-open="false">
+        <button type="button" class="nav-toplink" aria-expanded="false" aria-haspopup="true">Services <span class="caret" aria-hidden="true"></span></button>
+        <ul class="dropdown" role="menu">
+          <li role="none"><a role="menuitem" href="#services">Service Overview<small>All six disciplines</small></a></li>
+          <li role="none"><a role="menuitem" href="#bim">BIM<small>3D–7D modeling &amp; coordination</small></a></li>
+          <li role="none"><a role="menuitem" href="#gis">GIS<small>Site to city-scale spatial data</small></a></li>
+          <li role="none"><a role="menuitem" href="#digital-twin">Digital Twin<small>Real-time asset synchronization</small></a></li>
+          <li role="none"><a role="menuitem" href="#big-data">Big Data &amp; Analytics<small>Dashboards &amp; data pipelines</small></a></li>
+          <li role="none"><a role="menuitem" href="#facility-management">Facility Management<small>Lifecycle &amp; operations</small></a></li>
+        </ul>
+      </li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="cta-btn">Start a Conversation</a>
+
+    <button type="button" class="hamburger" id="hamburgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile overlay menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-top">
+    <span class="brandmark">
+      <img src="assets/img/logo-icon-sm.webp" width="96" height="62" alt="BIM GLOBAL logo">
+      <span class="brand-text"><b>BIM</b> GLOBAL</span>
+    </span>
+    <button type="button" class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu"></button>
+  </div>
+  <ul class="mobile-menu-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li>
+      <button type="button" class="mobile-toplink" aria-expanded="false">Services <span class="caret" aria-hidden="true"></span></button>
+      <ul class="mobile-submenu">
+        <li><a href="#services">Service Overview</a></li>
+        <li><a href="#bim">BIM <small>3D–7D modeling &amp; coordination</small></a></li>
+        <li><a href="#gis">GIS <small>Site to city-scale spatial data</small></a></li>
+        <li><a href="#digital-twin">Digital Twin <small>Real-time synchronization</small></a></li>
+        <li><a href="#big-data">Big Data &amp; Analytics</a></li>
+        <li><a href="#facility-management">Facility Management</a></li>
+      </ul>
+    </li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="#contact" class="cta-btn">Start a Conversation</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="kicker">ENGINEERING INTELLIGENCE</div>
+      <h1>Smarter Design.<br><em>Stronger</em> Digital Future.</h1>
+      <p>BIM GLOBAL leads BIM, GIS, Digital Twin, and Big Data strategy for owners and industrial operators — delivered through proven strategic implementation partnerships.</p>
+      <div class="btnrow">
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <a href="#portfolio" class="btn-secondary">View Our Portfolio</a>
+      </div>
+      <div class="hero-stats">
+        <div><b data-counter="5">5</b><span>Integrated Service Lines</span></div>
+        <div><b data-counter="35" data-prefix="~" data-suffix="%">~35%</b><span>Documented BIM Time Savings</span></div>
+        <div><b data-counter="7">7</b><span>Phase Delivery Methodology</span></div>
+        <div><b data-counter="100" data-suffix="%">100%</b><span>Partnership-Delivered Execution</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">ABOUT BIM GLOBAL</div>
+        <h2>One Engineering Intelligence Layer, Built for the Full Asset Lifecycle</h2>
+        <p>BIM GLOBAL is a newly established engineering intelligence practice focused on connecting BIM, GIS, Digital Twin and Big Data into a single coordinated layer — from first design model to day-to-day operations.</p>
+      </div>
+      <div class="split">
+        <div class="reveal">
+          <div class="kicker" style="color:var(--gold-ink)">HOW WE WORK</div>
+          <h2>Strategic Implementation Partnerships</h2>
+          <p>Rather than handing over a static model and walking away, BIM GLOBAL works alongside owners and operators as an embedded technical partner — aligning modeling standards, data structures, and dashboards to how a facility actually runs.</p>
+          <ul class="taglist">
+            <li>Multidisciplinary BIM coordination from concept through handover</li>
+            <li>GIS and spatial data integrated with the same model environment</li>
+            <li>Digital Twin and Big Data layers built on model-derived data, not siloed systems</li>
+            <li>Facility management and asset lifecycle planning informed by the same source of truth</li>
+          </ul>
+        </div>
+        <img class="reveal" src="assets/img/bim_wheel.webp" srcset="assets/img/bim_wheel-700.webp 700w, assets/img/bim_wheel.webp 1100w" sizes="(max-width: 900px) 100vw, 540px" width="1100" height="825" loading="lazy" decoding="async" alt="Diagram of the BIM Global engineering intelligence framework: spatial modeling, scheduling, cost, sustainability, and facility management dimensions arranged around a central hub.">
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">SERVICE PORTFOLIO</div>
+        <h2>One Engineering Intelligence Layer, Six Disciplines</h2>
+        <p>From building-scale precision to city-scale context, and from static model to live operational twin.</p>
+      </div>
+      <div class="grid3 reveal-stagger">
+        <div class="card reveal"><div class="num">01</div><h3>BIM Services</h3><p>Multidisciplinary coordination, clash detection, and construction-ready documentation.</p><a href="#bim" class="btn-mini">Learn more</a></div>
+        <div class="card reveal"><div class="num">02</div><h3>GIS Services</h3><p>Site, utility, and city-scale spatial integration through enterprise and web GIS.</p><a href="#gis" class="btn-mini">Learn more</a></div>
+        <div class="card reveal"><div class="num">03</div><h3>Digital Twin</h3><p>Real-time synchronized digital counterparts of physical assets.</p><a href="#digital-twin" class="btn-mini">Learn more</a></div>
+        <div class="card reveal" id="big-data"><div class="num">04</div><h3>Big Data &amp; Analytics</h3><p>Data lakes, pipelines, and executive dashboards built on model-derived data.</p></div>
+        <div class="card reveal" id="facility-management"><div class="num">05</div><h3>Facility Management</h3><p>BIM-enabled operations, maintenance planning, and lifecycle cost control.</p></div>
+        <div class="card reveal"><div class="num">06</div><h3>Asset Intelligence</h3><p>Unified, queryable asset registers spanning every physical and digital asset.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bim">
+    <div class="wrap split">
+      <img class="reveal" src="assets/img/bim_wheel.webp" srcset="assets/img/bim_wheel-700.webp 700w, assets/img/bim_wheel.webp 1100w" sizes="(max-width: 900px) 100vw, 540px" width="1100" height="825" loading="lazy" decoding="async" alt="BIM dimensions wheel showing spatial modeling, scheduling, cost, sustainability, and facility management arranged around a central hub.">
+      <div class="reveal">
+        <div class="kicker" style="color:var(--gold-ink)">BIM KNOWLEDGE CORE</div>
+        <h2>BIM Dimensions, 3D Through 7D</h2>
+        <p>Every dimension adds intelligence to the same coordinated model — geometry, schedule, cost, sustainability, and facility management — rather than requiring separate files.</p>
+        <ul class="taglist">
+          <li>3D — Spatial modeling &amp; coordination</li>
+          <li>4D — Scheduling &amp; construction sequencing</li>
+          <li>5D — Cost &amp; quantity extraction</li>
+          <li>6D — Sustainability &amp; operations</li>
+          <li>7D — Facility management &amp; asset lifecycle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="gis">
+    <div class="wrap split reverse">
+      <img class="reveal" src="assets/img/gis_diagram.webp" srcset="assets/img/gis_diagram-700.webp 700w, assets/img/gis_diagram.webp 1100w" sizes="(max-width: 900px) 100vw, 540px" width="1100" height="825" loading="lazy" decoding="async" alt="Diagram of BIM and GIS spatial integration showing indoor GIS floor networks and outdoor GIS site boundaries, roads, and terrain feeding a shared spatial database.">
+      <div class="reveal">
+        <div class="kicker" style="color:var(--gold-ink)">SITE TO CITY SCALE</div>
+        <h2>GIS Integration, Indoors and Outdoors</h2>
+        <p>Indoor GIS tracks floor networks, utilities, and fire systems inside the building; outdoor GIS covers site boundaries, roads, and terrain. Both feed the same spatial database so a single query can answer questions across the whole asset.</p>
+        <ul class="taglist">
+          <li>Outdoor GIS — site boundaries, roads, terrain</li>
+          <li>Indoor GIS — floor networks, utilities, fire systems</li>
+          <li>Browser-based asset mapping for non-specialist teams</li>
+          <li>Spatial database &amp; analytics shared with the BIM environment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="digital-twin">
+    <div class="wrap split">
+      <img class="reveal" src="assets/img/digital_twin.webp" srcset="assets/img/digital_twin-700.webp 700w, assets/img/digital_twin.webp 1100w" sizes="(max-width: 900px) 100vw, 540px" width="1100" height="756" loading="lazy" decoding="async" alt="Digital twin real-time synchronization loop connecting IoT sensors, the data platform, the digital twin model, and executive insights.">
+      <div class="reveal">
+        <div class="kicker" style="color:var(--gold-ink)">REAL-TIME OPERATIONS</div>
+        <h2>Closing the Loop Between Model and Reality</h2>
+        <p>IoT sensors feed a live data platform that keeps the digital twin model synchronized with the physical asset, surfacing executive-level insight instead of raw sensor noise.</p>
+        <ul class="taglist">
+          <li>IoT sensor ingestion into a single data platform</li>
+          <li>Digital twin model kept in sync with as-built reality</li>
+          <li>Executive dashboards built directly on live model data</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="industries">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">MARKET FOCUS</div>
+        <h2>Industries We Serve</h2>
+      </div>
+      <div class="grid4 reveal-stagger">
+        <div class="ind-card reveal"><h4>Steel Factories</h4><p>Clash detection &amp; fabrication-ready models for heavy industrial plant.</p></div>
+        <div class="ind-card reveal"><h4>Industrial Plants</h4><p>Process &amp; MEP coordination for continuous operations.</p></div>
+        <div class="ind-card reveal"><h4>Real Estate</h4><p>Design-to-handover BIM &amp; lifecycle facility management.</p></div>
+        <div class="ind-card reveal"><h4>Smart Cities</h4><p>City-scale GIS integration &amp; digital twin planning.</p></div>
+        <div class="ind-card reveal"><h4>Infrastructure</h4><p>4D sequencing &amp; 5D cost control across stakeholders.</p></div>
+        <div class="ind-card reveal"><h4>Hospitals</h4><p>Critical-systems coordination &amp; operational FM.</p></div>
+        <div class="ind-card reveal"><h4>Airports</h4><p>Large-scale spatial coordination &amp; asset tracking.</p></div>
+        <div class="ind-card reveal accent"><h4>Your Facility</h4><p>Let's discuss where your asset fits. <a href="#contact">Get in touch →</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">COMPANY PORTFOLIO</div>
+        <h2>How We Deliver</h2>
+        <p>A consistent seven-phase methodology applied across every engagement, illustrated here with representative, non-client-specific project types.</p>
+      </div>
+
+      <div class="methodology-band reveal">
+        <img src="assets/img/seven_phases.webp" srcset="assets/img/seven_phases-700.webp 700w, assets/img/seven_phases.webp 1100w" sizes="(max-width: 900px) 100vw, 540px" width="1100" height="866" loading="lazy" decoding="async" alt="The seven BIM implementation phases: discovery and data capture, GIS and site mapping, BIM model development, systems integration, big data and dashboard build, digital twin activation, and facility management handover.">
+        <div>
+          <h3>The 7-Phase Delivery Methodology</h3>
+          <p>Every engagement moves through the same seven phases — from discovery and data capture through to facility management handover — so BIM, GIS, and Big Data workstreams stay coordinated instead of running in parallel silos.</p>
+        </div>
+      </div>
+
+      <div class="grid4 reveal-stagger">
+        <article class="case-card reveal">
+          <div class="thumb" style="background-image:url('assets/img/ref_steel_structure.webp')"><span>Case Study</span></div>
+          <div class="body">
+            <h3>Steel Plant Digital Transformation</h3>
+            <p>Moving a heavy structural-steel facility from document-based coordination to a connected, continuously monitored digital operation.</p>
+          </div>
+        </article>
+        <article class="case-card reveal">
+          <div class="thumb" style="background-image:url('assets/img/ref_integrated_model.webp')"><span>Case Study</span></div>
+          <div class="body">
+            <h3>Industrial Manufacturing Project</h3>
+            <p>Multidisciplinary BIM coordination and clash detection across process, structural, and MEP systems.</p>
+          </div>
+        </article>
+        <article class="case-card reveal">
+          <div class="thumb" style="background:linear-gradient(135deg,#C9A35A,#8a6f3a)"><span>Case Study</span></div>
+          <div class="body">
+            <h3>Commercial Development BIM Project</h3>
+            <p>Design-to-handover BIM with lifecycle facility management data structured in from day one.</p>
+          </div>
+        </article>
+        <article class="case-card reveal">
+          <div class="thumb" style="background:linear-gradient(135deg,#163A63,#2B2F36)"><span>Case Study</span></div>
+          <div class="body">
+            <h3>Infrastructure Digital Twin</h3>
+            <p>City-scale GIS integration feeding a live digital twin for infrastructure planning and monitoring.</p>
+          </div>
+        </article>
+      </div>
+      <p class="case-note">BIM GLOBAL is a newly established practice — detailed case studies are published as engagements complete. <a href="#contact" style="color:var(--navy); font-weight:700; text-decoration:underline;">Get in touch</a> to discuss a project.</p>
+    </div>
+  </section>
+
+  <section class="light" id="insights">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">INSIGHTS</div>
+        <h2>From the BIM GLOBAL Knowledge Core</h2>
+      </div>
+      <div class="grid3 insights reveal-stagger">
+        <article class="card reveal">
+          <div class="thumb"></div>
+          <div class="body">
+            <div class="tag">BIM FUNDAMENTALS</div>
+            <h3>Traditional CAD vs. BIM: The Data Difference</h3>
+            <p style="font-size:13px;color:var(--text-muted)">Why intelligent objects outperform static geometry.</p>
+            <span class="status">Full article coming soon</span>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb" style="background:linear-gradient(135deg,#C9A35A,#8a6f3a)"></div>
+          <div class="body">
+            <div class="tag">DIGITAL TWIN</div>
+            <h3>Closing the Loop Between Model and Reality</h3>
+            <p style="font-size:13px;color:var(--text-muted)">How real-time synchronization changes operations.</p>
+            <span class="status">Full article coming soon</span>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb" style="background:linear-gradient(135deg,#163A63,#2B2F36)"></div>
+          <div class="body">
+            <div class="tag">BIG DATA</div>
+            <h3>From Data Lake to Executive Dashboard</h3>
+            <p style="font-size:13px;color:var(--text-muted)">Architecting analytics that leadership actually uses.</p>
+            <span class="status">Full article coming soon</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta reveal">
+    <div class="wrap">
+      <h2>Let's Build the Future of Your Assets Together.</h2>
+      <p>bimglobal.eg@gmail.com</p>
+      <a href="#contact" class="btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info reveal">
+        <div class="kicker">CONTACT</div>
+        <h2>Talk to BIM GLOBAL</h2>
+        <p>BIM GLOBAL is newly established, so email is currently the only official channel — there's no website, phone line, or social media account yet beyond this page.</p>
+
+        <div class="email-row">
+          <a href="mailto:bimglobal.eg@gmail.com">bimglobal.eg@gmail.com</a>
+          <button type="button" class="copy-btn" data-copy="bimglobal.eg@gmail.com" aria-describedby="copyFeedback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy email
+          </button>
+        </div>
+        <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+
+        <p class="contact-note">We don't yet have LinkedIn, Facebook, Instagram, X, YouTube, an office address, or a phone number to share. Email is the fastest way to reach us.</p>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" data-to="bimglobal.eg@gmail.com"
+            action="mailto:bimglobal.eg@gmail.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required aria-required="true">
+          <p class="field-error" role="alert"></p>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required aria-required="true">
+          <p class="field-error" role="alert"></p>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" required aria-required="true"></textarea>
+          <p class="field-error" role="alert"></p>
+        </div>
+        <button type="submit" class="form-submit">Send via Email</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brandmark" href="#home">
+        <img src="assets/img/logo-icon-sm.webp" width="96" height="62" loading="lazy" alt="BIM GLOBAL logo">
+        <span class="brand-text" style="color:#fff"><b style="color:var(--gold)">BIM</b> GLOBAL</span>
+      </a>
+      <p class="footer-desc">Engineering intelligence for BIM, GIS, Digital Twin, and Big Data — delivered through strategic implementation partnerships.</p>
+    </div>
+    <div>
+      <h5>COMPANY</h5>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SERVICES</h5>
+      <ul>
+        <li><a href="#bim">BIM</a></li>
+        <li><a href="#gis">GIS</a></li>
+        <li><a href="#digital-twin">Digital Twin</a></li>
+        <li><a href="#big-data">Big Data</a></li>
+        <li><a href="#facility-management">Facility Management</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="mailto:bimglobal.eg@gmail.com">bimglobal.eg@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="footerYear">2026</span> BIM GLOBAL — Digital Engineering. All rights reserved.</span>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top" id="scrollTopBtn" aria-label="Scroll back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+</button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
